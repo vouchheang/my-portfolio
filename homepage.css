@@ -1,6 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .container{
     /* width: 1000px; */
-    height: auto;
+    height:968px;
     background-color:#989090;
     margin: auto;
     position: relative;
@@ -32,6 +36,10 @@
     text-align: center;
     font-size: 20px;
     margin-right: 20px;
+}
+.menu ul li:hover{
+    cursor: pointer;
+    background-color: rgb(27, 94, 71);
 }
 .icon{
     width: 50%;
