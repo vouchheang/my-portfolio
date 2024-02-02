@@ -1,23 +1,22 @@
 body{
-    /* width: 100%; */
+    box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    font-family: 'Comfortaa', sans-serif;
 }
 .container{
-    height: 968px;
-    background-color:#989090;
+    height: auto;
+    background: linear-gradient(100deg, rgb(188, 151, 223), rgb(98, 98, 179));
     margin: auto;
-    overflow: hidden;
+    verflow: hidden; 
 }
 .menubar{
     width: 100%;
     height: 90px;
-    background-color:#D9D9D9;
 }
 .menu{
     width: 50%;
     height: 100%;
-    background-color:#D9D9D9;
     float: left;
 }
 .menu ul{
@@ -34,16 +33,19 @@ body{
     text-decoration: none;
     text-align: center;
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-shadow: 0 0 5px rgb(24, 21, 199);
 }
 .menu ul li:hover{
     cursor: pointer;
-    background-color: rgb(130, 238, 200);
+    background-color: rgb(163, 67, 187);
+    border-radius: 20px 40px ;
 }
 .icon{
     width: 50%;
     height: 100%;
-    background-color:#D9D9D9;
     float: left;
 
 }
@@ -58,22 +60,39 @@ body{
 .icon ul li i{
     font-size: 50px;
     margin-right: 35px;
-    
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(15, 15, 196);
 }
-.box1{
+.info-container{
     width: 100%;
-    height: auto;
     overflow: hidden;
-    /* background-color: thistle; */
-    /* position: relative; */
+    display: flex;
+    height: 460px;
+   
 }
-.box2{
+
+.info-card{
+    flex: 1;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+
+}
+.info-img{
+    flex: 1;
+    /* padding: 10px;*/
+
+}
+.img img{
+    object-fit: cover;
     width: 100%;
-    height: auto;
-    /* background-color: yellowgreen; */
+    height: 100%;
+    border-radius: 10px;
 }
+
+
 .personal{
-    width: 37%;
+    width: 82%;
   height: 36px;
   overflow: hidden;
   border: 1px solid black;
@@ -85,41 +104,52 @@ body{
 .text{
     color: white;
     font-size: 25px;
-    margin-left: 64px;
-    margin-top: 20px;
+    margin-left: 52px;
+    margin-top: 35px;
     float: left;
+    line-height: 40px;
 }
 .text1{
     color: white;
     font-size: 25px;
     float: left;
-    margin-top: 20px;
-    margin-left: 65px;
+    margin-top: 35px;
+    margin-left: 80px;
+    line-height: 40px;
 
 }
-.babybox1{
+/* .info-img{
     width: 34%;
-            height: 350px;
-            border: 2px solid black;
-            float: right;
-            border-radius: 10px;
-            margin-right: 100px;
-            margin-top:-108px;
-}
-.babybox2{
-    width: 30%;
     height: 350px;
-    margin-left: 4%;
     border: 2px solid black;
     border-radius: 10px;
-    margin-top: 30px;
-    float: left;
+    margin-right: 130px;
+    margin-top:-108px;
+    flex: 1;
+}
+.info-card{
+    width: 35%;
+    height: 350px;
+    margin-left: 110px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    flex: 1;
+    
 }
 .babybox3{
     color: white;
-    width:50% ;
+    width:40% ;
     font-size: 25px;
-    float: left;
     margin-top: 10px;
-    margin-left: 250px;
+    margin-left: 325px;
+    
+} */
+.img{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+   margin: auto;
+   border-radius: 10px;
+   margin-top: 30px;
 }
